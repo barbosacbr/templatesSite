@@ -1,0 +1,232 @@
+*{
+    margin:0;
+}
+
+
+
+body{
+    background-image: url("Paddington_basin_architecture_photography_4K_HD_3840x2160.jpg");
+}
+
+header{
+    height: 80px;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerTop{
+    color:transparent;
+
+}
+
+.lista{
+   
+    position: relative;
+    left:5%;
+}
+
+.lista ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.lista li{
+   
+    /* background-color: rgb(0, 0, 0); */
+    padding: 10px;
+   
+    color:white;
+    text-align: center;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: white;
+    color:aquamarine;
+    padding: 10px;
+}
+
+a:active{
+    font-size:50px;
+   
+    transition-duration: 1s;
+}
+
+section{
+    height: 700px;
+   
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.homeFooter1{
+
+} 
+
+
+/* Css página Home */
+
+.sectionHome{
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.homeText1{
+    height: 250px;
+    
+}
+
+.homeP1{
+    color:rgb(255, 255, 255);
+}
+
+.textoCentral{
+    color: white;
+    font-size: 70px;
+    width: 1500px;
+    text-align: center;
+    
+}
+
+
+/* Css página Imagens */
+
+.sectionPagImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height:500px;
+    flex-wrap: wrap;
+   
+}
+
+.b1{
+    background-color: rgb(255, 162, 48);
+    width:280px;
+    height: 250px;
+}
+.b2{
+    background-color: green;
+    width:280px;
+    height: 250px;
+}
+.b3{
+    background-color: purple;
+    width:280px;
+    height: 250px;
+}
+.b4{
+    background-color: yellow;
+    width:280px;
+    height: 250px;
+}
+
+
+/* Css página Vídeos */
+.sectionPagVideo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height:500px;
+    flex-wrap: wrap;
+}
+.v1{
+    height: 30%;
+}
+.v2{
+    height: 30%;
+}
+/* CSS contatos */
+
+.textForm {
+    background-color: rgb(193, 191, 191);
+    width: 500px;
+    border-radius: 5px;
+    border: solid 1px;
+    border-color: gray;
+}
+
+.textForm::placeholder{
+    color:rgb(0, 0, 0)
+}
+
+.butao{
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border: solid 0;
+    border-radius: 5px;
+    width: 100px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.comfortaa-uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.formulario{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.sectionContatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Acme", sans-serif;
+}
+
+
+/* Testando @medias Query*/
+
+/* Media query pag imagens */
+@media only screen and (min-width:000px) and (max-width:880px){
+    .sectionPagImg{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height:850px;
+        flex-wrap:nowrap;
+    }
+}
+
+@media only screen and (min-width:000px) and (max-width:880px){
+    .sectionPagVideo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height:750px;
+        flex-wrap: wrap;
+    }
+}
+
+
